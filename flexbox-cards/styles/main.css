@@ -24,6 +24,11 @@ img {
   height: 100%;
 }
 
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -81,7 +86,9 @@ img {
 
 .avatar:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px gray;
+  box-shadow: 0 8px 20px rgba(128, 128, 128, 0.3), 0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 60px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 1000px) {
