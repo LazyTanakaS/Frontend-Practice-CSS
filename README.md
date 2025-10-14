@@ -43,6 +43,20 @@ Each folder has its own README with detailed requirements and screenshots.
 
 ---
 
+## Flexbox Cards — Quality Checklist
+
+- [x] **Single `h1` element** exists on the page to define the main title.
+- [x] **Card titles use `h2`/`h3`** for proper heading hierarchy.
+- [x] **Semantic structure:** each card is marked up as an `article` (or list item).
+- [x] **Images have proper `alt` text** — descriptive for portraits, empty for decorative ones.
+- [x] **Images have fixed dimensions or `aspect-ratio`** to prevent layout shifts (CLS).
+- [x] **Smooth hover effect** with slight scale (`1.03–1.05`) and soft shadow, without moving other elements.
+- [x] **Visible focus state (`:focus-visible`)** for keyboard navigation.
+- [x] **Responsive layout:** no horizontal scroll or broken text on small screens (320–360 px).
+- [x] **Compressed images (WebP/AVIF)** for faster load and better performance.
+- [x] **Contrast meets accessibility guidelines** (WCAG ≥ 4.5:1).
+- [x] **Lighthouse scores ≥ 90** for Accessibility and Best Practices.
+
 ## Screenshots
 
 All screenshots and Lighthouse reports are stored under `/docs/screenshots`.
