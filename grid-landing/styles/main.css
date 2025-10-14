@@ -1,16 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  margin: 0;
-  background: linear-gradient(180deg, #000000 0%, #2e1a02 60%, #000000 100%);
-  font-family: "Poppins", sans-serif;
-  color: #fff;
 }
 
 img {
@@ -18,8 +10,131 @@ img {
   height: 100%;
 }
 
+body {
+  font-family: "GFS Neohellenic";
+  font-size: 18px;
+  background: #f8f8f5;
+  color: #44525f;
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin: 0;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 16px 24px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f8f8f5;
+  backdrop-filter: blur(2px);
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  max-width: 1600px;
+  margin: 25px auto;
+  padding: 0 40px;
+}
+
+header nav .right ul,
+header nav .left ul {
+  display: flex;
+  gap: 32px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+header nav .right {
+  justify-self: start;
+}
+
+header nav .left {
+  justify-self: end;
+}
+
+header img {
+  height: 40px;
+  width: auto;
+  justify-self: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-weight: 200;
+  font-size: 54px;
+}
+
+.hero h2 {
+  margin: 10px 10px;
+  color: #ce796b;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.date,
+.name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.date img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.name img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.hero-text {
+  margin: 10px 10px;
+  max-width: 650px;
+}
+
+.hero .btn {
+  background: #f8f8f5;
+  padding: 12px 80px;
+  color: #44525f;
+  font-family: "GFS Neohellenic";
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(128, 128, 128, 0.3), 0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 60px rgba(255, 255, 255, 0.2);
 }

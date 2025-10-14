@@ -1,0 +1,21 @@
+Лого-идея: простая капля + мягкая волна (намёк на “flow”).
+
+Палитра:
+
+Primary: Electric Blue #2F6BFF
+
+Secondary: Berry Pink #FF4D9A
+
+Accent: Lime Glow #B6FF5A
+
+Neutral: Charcoal #0E0F13, Mist #F4F6FA
+
+Типографика:
+
+Заголовки — геометрический гротеск (например, Inter/Manrope/Urbanist).
+
+Текст — нейтральный гротеск (Inter/IBM Plex Sans).
+
+Скругления: 16–20px, тени мягкие, blur 24–32px.
+
+Тон коммуникации: научный, но дружелюбный. Никакого “магии”, только “умный напиток + мягкая наука”.
