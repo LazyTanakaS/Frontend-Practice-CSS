@@ -74,6 +74,11 @@ img {
   cursor: pointer;
 }
 
+.avatar:focus-visible {
+  outline: 3px solid aquamarine;
+  outline-offset: 2px;
+}
+
 .avatar:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px gray;
