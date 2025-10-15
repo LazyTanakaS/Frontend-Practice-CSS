@@ -333,3 +333,122 @@ header img {
   box-shadow: 0 8px 20px rgba(128, 128, 128, 0.3), 0 0 30px rgba(255, 255, 255, 0.4),
     0 0 60px rgba(255, 255, 255, 0.2);
 }
+
+.site-footer {
+  background: #6b9a9a;
+  color: #f8f8f5;
+  margin-top: 50px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  align-items: center;
+  padding: 50px var(--gap-md);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #f8f8f5;
+  margin: 0;
+}
+
+.newsletter-bg {
+  background-color: #f8f8f5;
+  min-width: 380px;
+  min-height: 240px;
+  padding: 25px;
+  color: #44525f;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #999;
+  margin: 0 auto;
+}
+
+.newsletter h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newsletter-form input {
+  padding: 10px 14px;
+  border: 1px solid #44525f;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #44525f;
+  background-color: #f8f8f5;
+}
+
+.newsletter-form input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.subscribe-btn {
+  padding: 10px;
+  color: #44525f;
+  border: 1px solid #44525f;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f8f8f5;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #eaeaea;
+}
+
+.newsletter p {
+  font-size: 15px;
+}
+
+.privacy-link {
+  font-size: 15px;
+  color: #558c8c;
+}
+
+/* Responsive styles for footer */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    text-align: center;
+    padding: 40px var(--gap-md);
+  }
+
+  .footer-logo {
+    align-items: center;
+  }
+
+  .newsletter {
+    align-items: center;
+  }
+
+  .newsletter h3 {
+    text-align: center;
+  }
+}
