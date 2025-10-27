@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
   themeButtons.forEach((btn) => {
     if (btn.dataset.theme === savedTheme) {
       btn.classList.add("active");
+      btn.setAttribute("aria-pressed", "true");
     } else {
       btn.classList.remove("active");
+      btn.setAttribute("aria-pressed", "false");
     }
   });
 
@@ -32,13 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       html.setAttribute("data-theme", theme);
 
-      // Remove active class from all buttons
+      // Remove active class from all buttons and update ARIA
       themeButtons.forEach((btn) => {
         btn.classList.remove("active");
+        btn.setAttribute("aria-pressed", "false");
       });
 
-      // Add active class to clicked button
+      // Add active class to clicked button and update ARIA
       button.classList.add("active");
+      button.setAttribute("aria-pressed", "true");
 
       // Save theme to localStorage
       localStorage.setItem("theme", theme);
