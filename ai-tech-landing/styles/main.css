@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* ========== ANIMATIONS ========== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-animation), transform var(--transition-animation);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity var(--transition-animation), transform var(--transition-animation);
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity var(--transition-animation), transform var(--transition-animation);
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity var(--transition-animation), transform var(--transition-animation);
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+}
+
+.page {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--gap-md);
+  row-gap: var(--gap-lg);
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xs);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background var(--transition-normal), color var(--transition-normal);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  width: 100%;
+  gap: var(--gap-md);
+  padding: 16px 0;
+}
+
+/* LOGO */
+
+.brand {
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand img {
+  height: 28px;
+  width: auto;
+}
+
+.menu {
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: var(--gap-lg);
+  margin-left: 25%;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  justify-self: end;
+}
+
+.btn-link {
+  background: transparent;
+  border: none;
+  color: var(--color-btn-primary);
+  padding: 8px 12px;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--color-btn-primary);
+  border: none;
+  border-radius: var(--border-radius-md);
+  color: var(--color-bg-primary);
+  padding: 10px 15px;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-lg);
+  align-items: center;
+}
+
+.hero-content {
+  grid-column: 1;
+}
+
+.hero-content h1 {
+  font-size: var(--font-size-5xl);
+}
+
+.hero-content p {
+  font-size: var(--font-size-xs);
+}
+
+.hero-image {
+  grid-column: 2;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-2xl);
+}
+
+.highlight {
+  color: var(--color-btn-primary);
+}
+
+.hero .btn {
+  border-color: var(--color-btn-primary);
+  padding: 12px 20px;
+}
+
+.features-content h2 {
+  font-size: var(--font-size-5xl);
+}
+
+.features-content p {
+  font-size: var(--font-size-base);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--gap-lg);
+  align-items: center;
+}
+
+.card-content {
+  grid-column: 2;
+}
+
+.card-image {
+  grid-column: 1;
+}
+
+.card-content h3 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-btn-primary);
+}
+
+.card-content p {
+  font-size: var(--font-size-base);
+}
+
+.card-content:nth-child(1),
+.card-image:nth-child(2) {
+  grid-row: 1;
+}
+
+.card-content:nth-child(3),
+.card-image:nth-child(4) {
+  grid-row: 2;
+}
+
+.card-content:nth-child(5),
+.card-image:nth-child(6) {
+  grid-row: 3;
+}
+
+.card-content:nth-child(7),
+.card-image:nth-child(8) {
+  grid-row: 4;
+}
+
+.card-content:nth-child(9),
+.card-image:nth-child(10) {
+  grid-row: 5;
+}
+
+.card-content:nth-child(11),
+.card-image:nth-child(12) {
+  grid-row: 6;
+}

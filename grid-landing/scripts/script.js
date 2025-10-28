@@ -1,4 +1,4 @@
-// Theme switcher functionality
+// THEME SWITCHER
 console.log("Script loaded!");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,6 +46,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Save theme to localStorage
       localStorage.setItem("theme", theme);
+    });
+  });
+
+  // ANIMATIONS
+
+  const animatedElements = document.querySelectorAll(
+    ".fade-in, .fade-in-left, .fade-in-right, .scale-in"
+  );
+
+  console.log("Found animated elements:", animatedElements.length);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    }
+  );
+
+  animatedElements.forEach((element) => {
+    observer.observe(element);
+  });
+
+  // SMOOTH SCROLL
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const target = document.querySelector(targetId);
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     });
   });
 });

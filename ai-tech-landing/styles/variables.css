@@ -2,14 +2,15 @@
   /* ========== COLORS ========== */
 
   /* Background colors */
-  --color-bg-primary: #f8f8f5; /* Black background */
-  --color-bg-secondary: #6b9a9a; /* Dark cyan */
+  --color-bg-primary: #ffff; /* Black background */
+  --color-bg-secondary: ##f5f7fa; /* Dark cyan */
   --color-bg-tertiary: #eaeaea; /* Light gray */
+  --color-btn-primary: #4caf4f; /* Light green*/
 
   /* Text colors */
-  --color-text-primary: #44525f; /* White text */
-  --color-text-secondary: #558c8c; /* Gray text */
-  --color-text-tritinary: #ce796b; /* text */
+  --color-text-primary: #4d4d4d; /* White text */
+  --color-text-secondary: #717171; /* Gray text */
+  --color-text-tritinary: #263238; /* text */
   --color-text-muted: #898989; /* Muted text */
   --color-text-dark: #333333; /* Dark text */
   --color-text-city: #9fb0c2; /* City text in reviews */
@@ -20,16 +21,10 @@
   --color-border-light: rgba(255, 255, 255, 0.4);
   --color-divider: #a5a5a5;
 
-  /* Form colors */
-
-  --color-form-label: #4f4f4f;
-  --color-form-input-bg: #2c2420;
-  --color-form-button-hover: #a51b02;
-
   /* ========== SIZES AND SPACING ========== */
 
   /* Container sizes */
-  --container: 1140px;
+  --container: 1400px;
   --container-padding: var(--spacing-sm) var(--spacing-md);
 
   /* ========== TYPOGRAPHY ========== */
@@ -58,7 +53,7 @@
   --line-height-relaxed: 1.7;
 
   /* Font families */
-  --font-family-primary: "GFS Neohellenic";
+  --font-family-primary: "Inter";
 
   /* ========== BORDER RADIUS ========== */
 
