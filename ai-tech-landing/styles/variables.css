@@ -3,13 +3,14 @@
 
   /* Background colors */
   --color-bg-primary: #ffff; /* Black background */
-  --color-bg-secondary: ##f5f7fa; /* Dark cyan */
+  --color-bg-secondary: #f5f7fa; /* Dark cyan */
   --color-bg-tertiary: #eaeaea; /* Light gray */
   --color-btn-primary: #4caf4f; /* Light green*/
+  --color-bg-footer: #263238;
 
   /* Text colors */
-  --color-text-primary: #4d4d4d; /* White text */
-  --color-text-secondary: #717171; /* Gray text */
+  --color-text-primary: #4b4a4a; /* White text */
+  --color-text-secondary: #f5f7fa; /* Gray text */
   --color-text-tritinary: #263238; /* text */
   --color-text-muted: #898989; /* Muted text */
   --color-text-dark: #333333; /* Dark text */

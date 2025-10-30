@@ -3,48 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Transform your business with AI-powered tools. Harness machine learning to automate workflows, gain insights, and scale operations. Join 10,000+ companies using NeuralFlow."
+    />
+    <meta
+      name="keywords"
+      content="AI, artificial intelligence, machine learning, business automation, data analytics, neural networks"
+    />
+    <meta name="author" content="NeuralFlow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NeuralFlow - Transform Your Business with AI" />
+    <meta
+      property="og:description"
+      content="Harness the power of machine learning to automate workflows, gain actionable insights, and scale your operations effortlessly."
+    />
+    <meta property="og:image" content="./assets/image/hero.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NeuralFlow - Transform Your Business with AI" />
+    <meta
+      name="twitter:description"
+      content="Harness the power of machine learning to automate workflows, gain actionable insights, and scale your operations effortlessly."
+    />
+
+    <title>NeuralFlow - Transform Your Business with AI</title>
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <div class="page">
       <!-- NAVBAR -->
-      <header class="navbar">
-        <a class="brand" href="#">
-          <img src="./assets/icons/logo.png" alt="Nexcent logo" />
+      <header class="navbar" role="banner">
+        <a class="brand" href="#" aria-label="NeuralFlow homepage">
+          <img src="./assets/icons/logo.png" alt="NeuralFlow logo" />
         </a>
 
-        <nav class="menu">
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Service">Features</a></li>
-            <li><a href="#Feature">Solutions</a></li>
-            <li><a href="#Product">Pricing</a></li>
-            <li><a href="#Testimonial">Documentation</a></li>
-            <li><a href="#FAQ">Company</a></li>
+        <nav class="menu" role="navigation" aria-label="Main navigation">
+          <ul role="menubar">
+            <li role="none"><a href="#Home" role="menuitem">Home</a></li>
+            <li role="none"><a href="#Service" role="menuitem">Features</a></li>
+            <li role="none"><a href="#Feature" role="menuitem">Solutions</a></li>
+            <li role="none"><a href="#Product" role="menuitem">Pricing</a></li>
+            <li role="none"><a href="#Testimonial" role="menuitem">Documentation</a></li>
+            <li role="none"><a href="#FAQ" role="menuitem">Company</a></li>
           </ul>
         </nav>
 
         <div class="actions">
-          <button class="btn">Start Free Trial</button>
+          <button class="btn" aria-describedby="trial-description">Start Free Trial</button>
+          <span id="trial-description" class="sr-only"
+            >Begin your 14-day free trial with no credit card required</span
+          >
         </div>
       </header>
 
-      <main>
+      <main role="main">
         <!-- HERO SECTION -->
-        <section class="hero">
+        <section class="hero fade-in" aria-labelledby="hero-heading">
           <div class="hero-content">
-            <h1>Transform Your Business <span class="highlight">with AI</span></h1>
-            <p>
+            <h1 id="hero-heading">
+              Transform Your Business <span class="highlight">with AI</span>
+            </h1>
+            <p aria-describedby="hero-heading">
               Harness the power of machine learning to automate workflows, gain actionable insights,
               and scale your operations effortlessly. Join 10,000+ companies already using
               NeuralFlow.
             </p>
-            <button class="btn">Get Started Free</button>
-            <button class="btn">Watch Demo →</button>
+            <button class="btn" aria-describedby="get-started-description">Get Started Free</button>
+            <span id="get-started-description" class="sr-only"
+              >Start your free trial immediately, no credit card required</span
+            >
+            <button class="btn" aria-label="Watch product demonstration video">Watch Demo →</button>
           </div>
-          <div class="hero-image">
+          <div class="hero-image fade-in-right" role="img" aria-labelledby="hero-heading">
             <img
               src="./assets/image/hero.png"
               alt="AI-powered dashboard showing real-time analytics, neural network visualization, and automated workflow management"
@@ -52,80 +85,189 @@
           </div>
         </section>
 
-        <div class="features-content">
-          <h2>Why Choose NeuralFlow</h2>
+        <div class="features-content" role="banner" aria-labelledby="features-heading">
+          <h2 id="features-heading">Why Choose NeuralFlow</h2>
           <p>Powerful AI tools designed for modern businesses</p>
         </div>
 
-        <section class="features">
-          <div class="card-content">
-            <h3>Advanced Analytics</h3>
-            <p>
-              Real-time data processing with AI-powered insights. Make data-driven decisions with
-              predictive analytics and custom dashboards.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./assets/icons/chart-column-stacked.svg" alt="" />
-          </div>
-          <div class="card-content">
-            <h3>Lightning Performance</h3>
-            <p>
-              Process millions of requests per second with 99.9% uptime. Built on scalable cloud
-              infrastructure for maximum reliability.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./assets/icons/zap.svg" alt="" />
-          </div>
-          <div class="card-content">
-            <h3>Custom AI Models</h3>
-            <p>
-              Train and deploy models tailored to your specific business needs. No data science
-              expertise required.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./assets/icons/target.svg" alt="" />
-          </div>
-          <div class="card-content">
-            <h3>Seamless Integration</h3>
-            <p>
-              Connect with your existing tools in minutes. RESTful API, webhooks, and pre-built
-              integrations for popular platforms.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./assets/icons/link.svg" alt="" />
-          </div>
-          <div class="card-content">
-            <h3>Enterprise Security</h3>
-            <p>
-              Bank-grade encryption, SOC 2 compliance, and GDPR ready. Your data is always protected
-              and private.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./assets/icons/shield.svg" alt="" />
-          </div>
-          <div class="card-content">
-            <h3>24/7 Expert Support</h3>
-            <p>
-              Our dedicated team of AI specialists is available around the clock to help you
-              succeed.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./assets/icons/cloud.svg" alt="" />
+        <section class="features fade-in" aria-labelledby="features-heading" role="region">
+          <div class="card-grid">
+            <article class="card-content fade-in">
+              <div class="card-image" role="img" aria-labelledby="analytics-heading">
+                <img
+                  src="./assets/icons/chart-column-stacked.svg"
+                  alt="Analytics dashboard with charts and graphs"
+                />
+              </div>
+              <h3 id="analytics-heading">Advanced Analytics</h3>
+              <p>
+                Real-time data processing with AI-powered insights. Make data-driven decisions with
+                predictive analytics and custom dashboards.
+              </p>
+            </article>
+
+            <article class="card-content fade-in">
+              <div class="card-image" role="img" aria-labelledby="performance-heading">
+                <img
+                  src="./assets/icons/zap.svg"
+                  alt="Lightning bolt representing high performance"
+                />
+              </div>
+              <h3 id="performance-heading">Lightning Performance</h3>
+              <p>
+                Process millions of requests per second with 99.9% uptime. Built on scalable cloud
+                infrastructure for maximum reliability.
+              </p>
+            </article>
+
+            <article class="card-content fade-in">
+              <div class="card-image">
+                <img src="./assets/icons/target.svg" alt="" />
+              </div>
+              <h3 id="models-heading">Custom AI Models</h3>
+              <p>
+                Train and deploy models tailored to your specific business needs. No data science
+                expertise required.
+              </p>
+            </article>
+            <article class="card-content fade-in">
+              <div class="card-image">
+                <img src="./assets/icons/link.svg" alt="" />
+              </div>
+              <h3>Seamless Integration</h3>
+              <p>
+                Connect with your existing tools in minutes. RESTful API, webhooks, and pre-built
+                integrations for popular platforms.
+              </p>
+            </article>
+            <article class="card-content fade-in">
+              <div class="card-image">
+                <img src="./assets/icons/shield.svg" alt="" />
+              </div>
+              <h3>Enterprise Security</h3>
+              <p>
+                Bank-grade encryption, SOC 2 compliance, and GDPR ready. Your data is always
+                protected and private.
+              </p>
+            </article>
+
+            <article class="card-content fade-in">
+              <div class="card-image">
+                <img src="./assets/icons/cloud.svg" alt="" />
+              </div>
+              <h3>24/7 Expert Support</h3>
+              <p>
+                Our dedicated team of AI specialists is available around the clock to help you
+                succeed.
+              </p>
+            </article>
           </div>
         </section>
 
-        <section class="stats"></section>
+        <section class="stats fade-in fade-in">
+          <div class="stats-title">
+            <h2>Trusted by Industry Leaders</h2>
+            <p>Powering innovation across the globe</p>
+          </div>
+          <div class="stats-cards">
+            <div class="stats-content">
+              <img class="icon" src="./assets/icons/users.svg" alt="" />
+              <div>
+                <h3>10M+</h3>
+                <p>Active Users</p>
+              </div>
+            </div>
 
-        <section class="cta"></section>
+            <div class="stats-content">
+              <img class="icon" src="./assets/icons/check-check.svg" alt="" />
+              <div>
+                <h3>99.9%</h3>
+                <p>Uptime Guarantee</p>
+              </div>
+            </div>
 
-        <footer class="footer"></footer>
+            <div class="stats-content">
+              <img class="icon" src="./assets/icons/earth.svg" alt="" />
+              <div>
+                <h3>50+</h3>
+                <p>Countries Worldwide</p>
+              </div>
+            </div>
+
+            <div class="stats-content">
+              <img class="icon" src="./assets/icons/heart-plus.svg" alt="" />
+              <div>
+                <h3>24/7</h3>
+                <p>Customer Support</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta fade-in fade-in">
+          <div class="cta-title">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>
+              Join thousands of companies using AI to automate, analyze, and accelerate growth.
+              Start your free trial today—no credit card required.
+            </p>
+          </div>
+          <div class="input">
+            <input type="email" placeholder="Enter your work email" />
+            <button class="btn">Start Free Trial</button>
+          </div>
+          <p class="small-print">
+            By signing up, you agree to our Terms of Service and Privacy Policy
+          </p>
+        </section>
       </main>
+
+      <footer class="footer fade-in">
+        <div class="copyright">
+          <img src="./assets/icons/logo-black.png" alt="" />
+          <p>© 2025 NeuralFlow. All rights reserved</p>
+        </div>
+        <div class="product">
+          <h4>Product</h4>
+          <ul>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>API Documentation</li>
+            <li>Integrations</li>
+            <li>Changelog</li>
+          </ul>
+        </div>
+        <div class="company">
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Press Kit</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h4>Resources</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Community</li>
+            <li>Tutorials</li>
+            <li>Case Studies</li>
+            <li>Webinars</li>
+          </ul>
+        </div>
+        <div class="legal">
+          <h4>Legal</h4>
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Security</li>
+            <li>Compliance</li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="./scripts/script.js"></script>
   </body>
